@@ -3,7 +3,7 @@ import time
 
 import machine, neopixel
 
-leds_number = 25
+leds_number = 20
 pin_led = 26
 
 np = neopixel.NeoPixel(machine.Pin(pin_led), leds_number)
