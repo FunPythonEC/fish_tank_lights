@@ -3,7 +3,7 @@ import time
 
 import machine, neopixel
 
-leds_number = 30
+leds_number = 25
 pin_led = 26
 
 np = neopixel.NeoPixel(machine.Pin(pin_led), leds_number)
@@ -11,5 +11,5 @@ np = neopixel.NeoPixel(machine.Pin(pin_led), leds_number)
 for i in range(
     leds_number,
 ):
-    np[i] = (255, 255, 255)
+    np[i] = (150, 150, 150)
 np.write()
