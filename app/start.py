@@ -11,6 +11,6 @@ np = neopixel.NeoPixel(machine.Pin(pin_led), leds_number)
 for i in range(0, leds_number):
     np[i] = [0, 0, 0]
 
-for i in range(0, leds_number - 20):
+for i in range(7, leds_number - 13):
     np[i] = (25, 25, 75)
 np.write()
