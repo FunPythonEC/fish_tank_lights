@@ -1,11 +1,10 @@
 print("Version 3 installed using USB")
 import time
-from machine import Pin
 
-led = Pin(2, Pin.OUT)
+import machine, neopixel
 
-while True:
-    led.value(1)
-    time.sleep(0.5)
-    led.value(0)
-    time.sleep(0.5)
+np = neopixel.NeoPixel(machine.Pin(26), 29)
+
+for i in range(0, 29):
+    np[i] = (255, 255, 0)
+np.write()
