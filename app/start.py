@@ -1,4 +1,4 @@
-print("Version 2 installed using USB")
+print("Version 3 installed using USB")
 import time
 from machine import Pin
 
